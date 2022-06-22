@@ -1,0 +1,57 @@
+
+.hero{
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #ffffff;
+    text-align: center;
+
+
+    background-image:  linear-gradient(to right, #2F303A66, #2F303A66), url('../images/herophoto.jpg ');
+    background-size: cover;
+    background-position: center;
+
+    .hero__title{
+    
+        font-size: 44px;
+        line-height: 1.4;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+}
+
+.hero__button{
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    
+
+    background-color: $--hover-color;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+    border-color: $--hover-color;
+    border-radius: 4px;
+    border: 1px solid transparent;
+
+    @include transition;
+    &:hover,
+    &:focus{
+        background-color: #188CE8;
+    }
+}

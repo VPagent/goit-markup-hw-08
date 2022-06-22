@@ -1,0 +1,42 @@
+
+//   Base 
+
+@import './base/body';
+@import './base/variable';
+@import './base/container';
+@import './base/section';
+// utils
+@import './utils/mixins';
+@import './utils/flex';
+@import './utils/button';
+@import './utils/myNormalize';
+
+//   components
+
+// page-header
+@import './components/page-header';
+@import './components/logo';
+@import './components/contacts-list';
+
+// hero
+@import './components/section-hero';
+
+// peculiarities
+@import './components/peculiarities';
+
+// doing
+@import './components/doing';
+
+// our-team
+@import './components/our-team';
+
+// clients
+@import './components/clients';
+// footer
+@import './components/footer';
+// modal
+@import './components/modal';
+
+// PORTFOLIO
+@import './components/portfolio/filters';
+@import './components/portfolio/services';
