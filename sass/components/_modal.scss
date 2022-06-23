@@ -62,7 +62,7 @@
     overflow: scroll;
 
     @media screen and (max-width: 480px) {
-        width: 100%;
+        width: calc(100% - 30px);
     }
 }
 
@@ -180,9 +180,10 @@
     margin-top: 20px;
 
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
+    
 
 }
 
