@@ -8,11 +8,12 @@
 }
 
 .peculiarities__list{
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
 
     .peculiarities__item{
-        width: calc((100% - 90px) / 4);
+        width:  100%;                 
+        // calc((100% - 90px) / 4);
         margin-right: 30px;
     
     }

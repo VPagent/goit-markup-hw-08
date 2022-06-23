@@ -4,15 +4,30 @@
     border-bottom: 1px solid #ECECEC;
 
     .page-header__nav{
+
         display: flex;
         align-items: center;
         justify-self: start;
     }
 }
+.nav-button{
+    margin-left: auto;
+    border: 0;
+    background-color: transparent;
+
+    & .use-cross{
+        display: none;
+    }
+    &:hover,
+    &:focus{
+        fill: $--hover-color;
+    }
+}
 
 .page-header__list{
-    display: flex;
-    margin-left: 93px;
+    display: none;
+    // display: flex;
+    // margin-left: 93px;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -47,9 +62,9 @@
 
     &::after{
         content: '';
-        display: flex;
+        // display: flex;
     
-        position: absolute;
+        // position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;

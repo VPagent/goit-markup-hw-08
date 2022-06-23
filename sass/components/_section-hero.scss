@@ -3,7 +3,7 @@
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    min-height: 600px;
+    // min-height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -14,11 +14,13 @@
     background-image:  linear-gradient(to right, #2F303A66, #2F303A66), url('../images/herophoto.jpg ');
     background-size: cover;
     background-position: center;
+    width: 100%;
 
     .hero__title{
     
-        font-size: 44px;
-        line-height: 1.4;
+    
+        font-size: 26px;
+        line-height: 1.6;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
