@@ -10,10 +10,26 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     // @include transition (opacity);
     // @include transition (visibility);
+
+    // padding-left: 15px;
+    // padding-right: 15px;
+    overflow-y: scroll;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
 }
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
+    
     
     visibility: hidden;
     // @include transition (opacity);
@@ -29,7 +45,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 533px;
+    max-width: 528px;
 
     padding: 40px;
 
@@ -37,12 +53,17 @@
     border-radius: 4px;
 
     display: flex;
+    
 
     background-color: #ffffff;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     @include transition (transform);
+    overflow: scroll;
 
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 }
 
 .modal-btn{

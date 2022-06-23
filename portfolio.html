@@ -16,26 +16,53 @@
         <div class="conteiner">
         <nav class="page-header__nav">
             <a class="logo" href="./index.html">Web<span class="logo__text logo__text--heder">Studio</span></a>
-            <ul class="page-header__list">
-                <li class="page-header__item"><a class="page-header__link" href="./index.html">Студия</a></li>
-                <li class="page-header__item"><a class="page-header__link current" href="./portfolio.html">Портфолио</a></li>
-                <li class="page-header__item"><a class="page-header__link" href="#contacts">Контакты</a></li>
-            </ul>
-        
-            <ul class="contacts-list">
-                <li class="contacts-list__item">
-                    <a class="contacts-list__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-list__icon" width="16px" height="12px" >
-                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="contacts-list__item">
-                    <a class="contacts-list__link" href="tel:+380961111111">
-                        <svg class="contacts-list__icon" width="10px" height="16px">
-                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                        </svg> +38 096 111 11 11</a></li>
-            </ul>
+            <button 
+            class="nav-button is-open" 
+            type="button" 
+            aria-expanded="true" 
+            data-menu-button>
+                <svg class="nav-button__svg" width="40px" height="40px" 
+                aria-label="переключатель мобильного меню">
+                    <use class="use-cross" href="./images/symbol-defs.svg#icon-cross"></use>
+                    <use class="use-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-conteiner is-open" data-menu>
+                <ul class="page-header__list">
+                    <li class="page-header__item"><a class="page-header__link current" href="./index.html">Студия</a></li>
+                    <li class="page-header__item"><a class="page-header__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="page-header__item"><a class="page-header__link" href="#contacts">Контакты</a></li>
+                </ul>
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                            <svg class="contacts-list__icon" width="16px" height="12px" >
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a class="contacts-list__link" href="tel:+380961111111">
+                            <svg class="contacts-list__icon" width="10px" height="16px">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg> +38 096 111 11 11</a></li>
+                </ul>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">Instagram</a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">Twitter</a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">Facebook</a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            
         </nav>
         </div>
     </header>
@@ -248,6 +275,6 @@
                 </div>
             </div>
         </footer>
-
+        <script src="./js/menu.js"></script>
     
     </body>

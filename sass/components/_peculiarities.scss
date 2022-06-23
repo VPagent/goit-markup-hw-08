@@ -4,18 +4,20 @@
 }
 
 .peculiarities{
-    padding-top: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .peculiarities__list{
     // display: flex;
     // flex-direction: row;
+    
 
     .peculiarities__item{
         width:  100%;                 
         // calc((100% - 90px) / 4);
-        margin-right: 30px;
-    
+        // margin-right: 30px;
+        margin-bottom: 30px;
     }
     .peculiarities__item:nth-child(4n){
         margin-right: 0px;
@@ -26,6 +28,7 @@
 
     color: $--titles-font-color;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
