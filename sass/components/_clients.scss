@@ -18,6 +18,8 @@
     margin-top: 50px;
     width: 100%;
     flex-wrap: wrap;
+
+    
     
 }
 .clients-list__item{
@@ -35,8 +37,32 @@
     &:focus{
     border-color: $--hover-color;
     }
+    &:hover .clients-list__icon,
+    &:focus .clients-list__icon{
+        fill: $--hover-color;
+    }
     &:nth-child(2n+1){
         margin-right: 30px;
+    }
+    @media screen and (min-width:768px){
+      width: calc((100% - 60px)/3);
+        &:nth-child(2n+1){
+            margin-right: 0;
+        }  
+        &:not(:nth-child(3n)){
+            margin-right: 30px;
+        }
+    }
+    @media screen and (min-width:1200px){
+        width: calc((100% - 150px)/6);
+        margin-bottom: 0;
+        &:not(:nth-child(3n)){
+            margin-right: 0;
+        }
+        &:not(:first-child){
+            margin-left: 30px;
+        }
+        
     }
 }
 
