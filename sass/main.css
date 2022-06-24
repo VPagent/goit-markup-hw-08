@@ -126,7 +126,8 @@ a {
   display: none;
 }
 
-.nav-button:hover, .nav-button:focus {
+.nav-button:hover .nav-button__svg,
+.nav-button:focus .nav-button__svg {
   fill: #2196F3;
 }
 
@@ -1718,6 +1719,9 @@ a {
 @media screen and (min-width: 768px) {
   .product-list {
     margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .product-list .product-card {
     width: calc((100% - 60px)/2);
@@ -1744,7 +1748,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .product-card:nth-child(1n+1) {
+  .product-card:nth-child(2n+1) {
     margin-right: 30px;
   }
 }
