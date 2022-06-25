@@ -695,6 +695,9 @@ a {
   .peculiarities__item:nth-child(2n+1) {
     margin-right: 30px;
   }
+  .peculiarities__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
