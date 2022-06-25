@@ -28,7 +28,11 @@
 .peculiarities__item{
     width: 100%;
     margin-bottom: 30px;
-
+    @media screen and (max-width: 767px) {
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
     @media screen and (min-width: 768px) {
         width: calc((100% - 30px)/2);
         &:nth-child(2n+1){
