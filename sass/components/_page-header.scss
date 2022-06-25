@@ -20,12 +20,13 @@
     }
 }
 .nav-button{
-    position: absolute;
+    // position: absolute;
     margin-left: auto;
     right: 1%;
     border: 0;
     background-color: transparent;
     z-index: 2;
+    padding:0;
 
     & .use-cross{
         display: none;
@@ -42,6 +43,7 @@
 }
 .nav-button.is-open{
     position: fixed;
+    right: 3%;
 }
 .nav-button.is-open .use-cross{
     position: fixed;
@@ -195,7 +197,7 @@
     @media screen and (max-width: 767px){
         display: flex;
         flex-direction: column-reverse;
-        margin-top: 300px;
+        margin-top: auto;
     }
     @media screen and (min-width:768px) {
         display: flex;

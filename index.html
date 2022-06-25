@@ -130,7 +130,7 @@
                     <img
                      srcset="
                         ./images/doing/left.jpg,
-                        ./images/doing/left@2x.png 2x"
+                        ./images/doing/left@2x.jpg 2x"
                     src="./images/doing/left.jpg" width="370" height="294" 
                     alt="wright code">
                     <div class="doing-list__wrapper">
@@ -140,7 +140,7 @@
                 <li class="doing-list__item">
                     <img  srcset="
                     ./images/doing/center.jpg,
-                    ./images/doing/center@2x.png 2x"
+                    ./images/doing/center@2x.jpg 2x"
                     src="./images/center.jpg" width="370" height="294" alt="adaptacion">
                     <div class="doing-list__wrapper">
                         <h4>Мобильные Приложения</h4>
@@ -149,7 +149,7 @@
                 <li class="doing-list__item">
                     <img  srcset="
                     ./images/doing/right.jpg,
-                    ./images/doing/right@2x.png 2x"
+                    ./images/doing/right@2x.jpg 2x"
                 src="./images/doing/left.jpg"
                     src="./images/right.jpg" width="370" height="294" alt="color">
                     <div class="doing-list__wrapper">
@@ -165,9 +165,12 @@
             <h2 class="our-team__title">Наша команда</h2>
             <ul class="team-cards">
                 <li class="team-cards__item">
-                    <img srcset="./images/our-tem/mobil/igor480.jpg W480,
-                    ./images/our-tem/mobil/igor480@2x.png 2x"
-                    src="./images/our-tem/desktop/igor.jpg" width="270px" alt="igor demyanenko">
+                    <picture>
+                        <source srcset="./images/our-tem/desktop/igor.jpg 1x, ./images/our-tem/desktop/igor@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/our-tem/tablet/igor768.jpg, ./images/our-tem/tablet/img@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/our-tem/mobil/igor480.jpg 1x, ./images/our-tem/mobil/igor480@2x.jpg 2x" media="(min-width:320px)" >
+                        <img  src="images/our-tem/mobil/igor480.jpg" alt="Фото Игорь Демьяненко" aria-label="Игорь Демьяненко">
+                    </picture>
                     <div class="team-cards__wrapper">
                         <h3 class="team-cards__title">Игорь Демьяненко</h3>
                         <p class="team-cards__text">Product Designer</p>
@@ -204,9 +207,12 @@
                     </ul>
                 </li>
                 <li class="team-cards__item">
-                    <img srcset="./images/our-tem/mobil/elena480.jpg,
-                    ./images/our-tem/mobil/elena480@2x.png 2x"
-                    src="./images/our-tem/mobil/elena480.jpg" width="270" alt="olga repina">
+                    <picture>
+                        <source srcset="./images/our-tem/desktop/olga.jpg 1x, ./images/our-tem/desktop/olga@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/our-tem/tablet/olga.jpg, ./images/our-tem/tablet/olga@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/our-tem/mobil/elena480.jpg 1x, ./images/our-tem/mobil/elena480@2x.jpg 2x" media="(min-width:320px)" >
+                        <img  src="./images/our-tem/desktop/olga.jpg" alt="Ольга Репина" aria-label="Ольга Репина">
+                    </picture>
                     <div class="team-cards__wrapper">
                         <h3 class="team-cards__title">Ольга Репина</h3>
                         <p class="team-cards__text">Frontend Developer</p>
@@ -243,9 +249,12 @@
                     </ul>
                 </li>
                 <li class="team-cards__item">
-                    <img srcset="./images/our-tem/mobil/nikolay480.jpg,
-                    ./images/our-tem/mobil/nikolay480@2x.png 2x" 
-                    src="./images/our-tem/mobil/nikolay480.jpg" width="270" alt="nikolay tarasov">
+                    <picture>
+                        <source srcset="./images/our-tem/desktop/nikolay.jpg 1x, ./images/our-tem/desktop/niko@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/our-tem/tablet/nikol.jpg, ./images/our-tem/tablet/nikol@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/our-tem/mobil/nikolay480.jpg 1x, ./images/our-tem/mobil/nikolay480@2x.jpg 2x" media="(min-width:320px)" >
+                        <img  src="./images/our-tem/desktop/nikolay.jpg" alt="Николай Тарасов" aria-label="Николай Тарасов">
+                    </picture>
                     <div class="team-cards__wrapper">
                         <h3 class="team-cards__title">Николай Тарасов</h3>
                         <p class="team-cards__text">Marketing</p>
@@ -282,9 +291,12 @@
                     </ul>
                 </li>
                 <li class="team-cards__item">
-                    <img srcset="./images/our-tem/mobil/mihail480.jpg,
-                    ./images/our-tem/mobil/mihail480@2x.png 2x" 
-                     src="./images/our-tem/mobil/mihail480.jpg" width="270" alt="mikhail ermakov">
+                    <picture>
+                        <source srcset="./images/our-tem/desktop/mihail.jpg 1x, ./images/our-tem/desktop/miha@2x.jpg 2x" media="(min-width:1200px)">
+                        <source srcset="./images/our-tem/tablet/miha.jpg, ./images/our-tem/tablet/miha@2x.jpg 2x" media="(min-width:768px)">
+                        <source srcset="./images/our-tem/mobil/mihail480.jpg 1x, ./images/our-tem/mobil/mihail480@2x.jpg 2x" media="(min-width:320px)" >
+                        <img  src="./images/our-tem/desktop/mihail.jpg" alt="Михаил Ермаков" aria-label="Михаил Ермаков">
+                    </picture>
                     <div class="team-cards__wrapper">
                         <h3 class="team-cards__title">Михаил Ермаков</h3>
                         <p class="team-cards__text">UI Designer</p>

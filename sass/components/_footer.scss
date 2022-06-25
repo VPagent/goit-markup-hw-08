@@ -3,7 +3,11 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $--footer-bcg-color;
+    & .logo{
+        margin-top:0;
+    }
 }
+
 .footer__wrapper{
     text-align: center;
         // @include flex (flex);
